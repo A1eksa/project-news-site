@@ -1,6 +1,7 @@
 body {
   margin: 0;
 }
+
 html {
   color: black;
   font-family: Helvetica, sans-serif, Arial;
@@ -22,6 +23,7 @@ header {
   height: 200px;
   background-color: white;
 }
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -32,11 +34,13 @@ nav {
   font-size: 6vw;
   position: center;
 }
+
 li {
   padding: 10px;
   position: -webkit-sticky;
   border-right: 20px;
 }
+
 h2:hover {
   background-color: #254e58;
 }
@@ -56,6 +60,7 @@ h2:hover {
 .big-news-image {
   width: 80%;
 }
+
 .text-container {
   display: flex;
   flex-direction: column;
@@ -67,6 +72,7 @@ h2:hover {
   flex-grow: 1;
   justify-content: center;
   padding: 10px;
+  font-size: 19px;
 }
 
 .flex-box {
@@ -92,7 +98,6 @@ h2:hover {
   border-radius: 5px;
   height: 300px;
   width: 300px;
-  flex-grow: 1;
   padding: 10px;
 
   background-color: white;
