@@ -1,42 +1,38 @@
-body{
-  margin:0;
+body {
+  margin: 0;
 }
 html {
   color: black;
-  font-family: Helvetica, sans-serif, Arial,;
+  font-family: Helvetica, sans-serif, Arial;
   font-size: 12px;
   background-color: white;
-  
 }
 
 .logo {
   width: 100px;
   height: 100px;
   position: sticky;
-  border-radius: 20px ;
+  border-radius: 20px;
   margin: 30px;
   box-shadow: 10px 5px 5px teal;
-
 }
 
-header{
+header {
   width: 100%;
   height: 200px;
   background-color: white;
-
 }
-nav{
-  display:flex;
+nav {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
 }
-.site-name{
+.site-name {
   font-size: 6vw;
   position: center;
-
 }
-li{
+li {
   padding: 10px;
   position: -webkit-sticky;
   border-right: 20px;
@@ -45,29 +41,27 @@ h2:hover {
   background-color: #254e58;
 }
 
-.big-news{
+.big-news {
   display: flex;
   flex-direction: row;
   margin: 10px 20px;
   padding: 20px;
-  margin-right:10px;
+  margin-right: 10px;
   text-align: center;
 
   background-color: rgb(250, 250, 250);
   align-items: left;
 }
 
-.big-news-image{
-  width: 100%;
-  
+.big-news-image {
+  width: 80%;
 }
-.text-container{
+.text-container {
   display: flex;
-  flex-direction:column;
-
+  flex-direction: column;
 }
 
-.big-news-text{
+.big-news-text {
   text-align: center;
   margin: 5px;
   flex-grow: 1;
@@ -79,11 +73,9 @@ h2:hover {
   display: flex;
   height: 50%;
   width: 50%;
-
 }
 
 .flex-parent {
-
   height: 800px;
   width: 100%;
   display: flex;
@@ -91,9 +83,9 @@ h2:hover {
   align-items: center;
   background-color: white;
   flex-wrap: wrap;
-  border-width: 15 px;   
-} 
-   
+  border-width: 15 px;
+}
+
 .flex-child {
   margin: 15px;
   border: 2px solid #254e58;
@@ -106,13 +98,20 @@ h2:hover {
   background-color: white;
   animation-name: example;
   animation-duration: 4s;
-  
 }
 @keyframes example {
-  0%   {background-color: white;}
-  25%  {background-color: rgb(162, 187, 113);}
-  50%  {background-color: rgb(76, 117, 76);}
-  100% {background-color: teal;}
+  0% {
+    background-color: white;
+  }
+  25% {
+    background-color: rgb(162, 187, 113);
+  }
+  50% {
+    background-color: rgb(76, 117, 76);
+  }
+  100% {
+    background-color: teal;
+  }
 }
 
 .flex-child img {
@@ -123,7 +122,7 @@ h2:hover {
   height: 200px;
 }
 
-.p{
+.p {
   color: black;
   text-align: right;
 }
@@ -133,25 +132,27 @@ h2:hover {
   to {background-color: white;}
 }*/
 
-
-@media (max-width:767px) {
-  #navigation-bar{
-    display:none;
-  } 
-  .header{
+@media (max-width: 767px) {
+  #navigation-bar {
+    display: none;
+  }
+  .header {
     flex-direction: row;
     text-align: right;
   }
-  .big-news{
+  .big-news {
     flex-direction: column;
   }
-  .flex-parent{
+  .flex-parent {
     grid-template-columns: repeat(2, 1fr);
     gap: 0 20px;
   }
+  .big-news-image {
+    width: 100%;
+  }
 }
-@media (min-width:992px) {
-  .flex-parent{
+@media (min-width: 992px) {
+  .flex-parent {
     grid-template-columns: repeat(4, 1fr);
   }
 }
